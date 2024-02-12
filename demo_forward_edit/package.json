@@ -1,0 +1,16 @@
+{
+  "name": "demo_forward_edit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "diff": "^5.1.0",
+    "uglify-js": "^3.17.4"
+  }
+}
