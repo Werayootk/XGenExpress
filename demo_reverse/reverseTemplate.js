@@ -2,38 +2,110 @@ const fs = require('fs');
 
 const profile_for_nodejs = `
 <packagedElement xmi:id="AAAAAAGMmYYazF13nfo=" name="UML_profile_for_NodeJs" visibility="public" xmi:type="uml:Profile">
-<packagedElement xmi:id="AAAAAAGMmc+pm15OkLo=" name="Resource" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMtN6dTFg9ixA=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMmc+pm15OkLo=" name="Route" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVCvvZQa4=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMtN6dTFg9ixA="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVCvva+cQ=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMmc+pm15OkLo="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMtN6dTFg9ixA=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVCvvZQa4=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmdUuwV9zed8=" name="HTTPMethod" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMmfkBCWv/o80=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMmdUuwV9zed8=" name="HTTPMethod" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVCvvb7hU=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMmfkBCWv/o80="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVCvvcRj0=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMmdUuwV9zed8="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMmfkBCWv/o80=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVCvvb7hU=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmdhx6F/AjOw=" name="Controller" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMtN6oOVhOzPk=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMmdhx6F/AjOw=" name="Controller" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVCvvdWic=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMtN6oOVhOzPk="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVCvvea48=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMmdhx6F/AjOw="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMtN6oOVhOzPk=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVCvvdWic=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmdjJmGABFtE=" name="Model" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMtN607FhfT5Q=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMmdjJmGABFtE=" name="Model" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVCvvf0jw=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMtN607FhfT5Q="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVCvvg8aI=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMmdjJmGABFtE="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMtN607FhfT5Q=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVCvvf0jw=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgLI/3Kpf3A=" name="GET" xmi:type="uml:Stereotype">
-    <generalization xmi:id="AAAAAAGMmgO7DXOiR3k=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgLI/3Kpf3A=" general="AAAAAAGMmdUuwV9zed8="/>
+<packagedElement xmi:id="AAAAAAGMmgLI/3Kpf3A=" name="GET" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <generalization xmi:id="AAAAAAGMmgO7DXOiR3k=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgLI/3Kpf3A=" general="AAAAAAGMmdUuwV9zed8="/>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgLxTHLXFS4=" name="POST" xmi:type="uml:Stereotype">
-    <generalization xmi:id="AAAAAAGMmgOvtXORM3c=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgLxTHLXFS4=" general="AAAAAAGMmdUuwV9zed8="/>
+<packagedElement xmi:id="AAAAAAGMmgLxTHLXFS4=" name="POST" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <generalization xmi:id="AAAAAAGMmgOvtXORM3c=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgLxTHLXFS4=" general="AAAAAAGMmdUuwV9zed8="/>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgMTNnMFpHg=" name="DELETE" xmi:type="uml:Stereotype">
-    <generalization xmi:id="AAAAAAGMmgPGgnOz878=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgMTNnMFpHg=" general="AAAAAAGMmdUuwV9zed8="/>
+<packagedElement xmi:id="AAAAAAGMmgMTNnMFpHg=" name="DELETE" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <generalization xmi:id="AAAAAAGMmgPGgnOz878=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgMTNnMFpHg=" general="AAAAAAGMmdUuwV9zed8="/>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgM/jHMzGcI=" name="PUT" xmi:type="uml:Stereotype">
-    <generalization xmi:id="AAAAAAGMmgPlxHPVg88=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgM/jHMzGcI=" general="AAAAAAGMmdUuwV9zed8="/>
+<packagedElement xmi:id="AAAAAAGMmgM/jHMzGcI=" name="PUT" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <generalization xmi:id="AAAAAAGMmgPlxHPVg88=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgM/jHMzGcI=" general="AAAAAAGMmdUuwV9zed8="/>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgNrlHNizAM=" name="PATCH" xmi:type="uml:Stereotype">
-    <generalization xmi:id="AAAAAAGMmgRKFnP6RUQ=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgNrlHNizAM=" general="AAAAAAGMmdUuwV9zed8="/>
+<packagedElement xmi:id="AAAAAAGMmgNrlHNizAM=" name="PATCH" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <generalization xmi:id="AAAAAAGMmgRKFnP6RUQ=" visibility="public" xmi:type="uml:Generalization" specific="AAAAAAGMmgNrlHNizAM=" general="AAAAAAGMmdUuwV9zed8="/>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMmgYuNHQtJpU=" name="Database" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMtN7AQVhwLFQ=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMmgYuNHQtJpU=" name="Database" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVCvvh8n4=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMtN7AQVhwLFQ="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVCvviagE=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMmgYuNHQtJpU="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMtN7AQVhwLFQ=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVCvvh8n4=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
-<packagedElement xmi:id="AAAAAAGMt9vIbknkDC0=" name="ResourcePath" xmi:type="uml:Stereotype">
-    <ownedAttribute xmi:id="AAAAAAGMt9vWmUoQc98=" name="base_Class"  xmi:type="uml:Property"/>
+<packagedElement xmi:id="AAAAAAGMt9vIbknkDC0=" name="ResourcePath" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVC/vjjUM=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGMt9vWmUoQc98="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVC/vkRfw=" xmi:type="uml:ExtensionEnd" type="AAAAAAGMt9vIbknkDC0="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGMt9vWmUoQc98=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVC/vjjUM=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
+</packagedElement>
+<packagedElement xmi:id="AAAAAAGNm4m4d2OgCNQ=" name="API" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVC/vlsWs=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGNm4tWemPOfdU="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVC/vm4U0=" xmi:type="uml:ExtensionEnd" type="AAAAAAGNm4m4d2OgCNQ="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGNm4tWemPOfdU=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVC/vlsWs=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
+</packagedElement>
+<packagedElement xmi:id="AAAAAAGNm5lfNROkcaQ=" name="ControllerPackage" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVC/vnuec=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGNm5nWSRQxsbc="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVC/vo6qU=" xmi:type="uml:ExtensionEnd" type="AAAAAAGNm5lfNROkcaQ="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGNm5nWSRQxsbc=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVC/vnuec=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
+</packagedElement>
+<packagedElement xmi:id="AAAAAAGNm5l9ehPS+rU=" name="ModelPackage" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVC/vp9cc=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGNm5nicxRCy/c="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVC/vqFxY=" xmi:type="uml:ExtensionEnd" type="AAAAAAGNm5l9ehPS+rU="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGNm5nicxRCy/c=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVC/vp9cc=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
+</packagedElement>
+<packagedElement xmi:id="AAAAAAGNm5mxXRQB3tc=" name="DatabasePackage" visibility="public" isAbstract="false" isFinalSpecialization="false" isLeaf="false" xmi:type="uml:Stereotype" isActive="false">
+  <ownedMember xmi:id="AAAAAAGNm/uVC/vrprg=" xmi:type="uml:Extension">
+    <memberEnd xmi:idref="AAAAAAGNm5nuPRRTAr8="/>
+    <ownedEnd xmi:id="AAAAAAGNm/uVC/vsm2c=" xmi:type="uml:ExtensionEnd" type="AAAAAAGNm5mxXRQB3tc="/>
+  </ownedMember>
+  <ownedAttribute xmi:id="AAAAAAGNm5nuPRRTAr8=" xmi:type="uml:Property" name="base_Class" association="AAAAAAGNm/uVC/vrprg=">
+    <type href="http://schema.omg.org/spec/UML/2.0/uml.xml#Class"/>
+  </ownedAttribute>
 </packagedElement>
 </packagedElement>
 `;
@@ -78,11 +150,12 @@ function mapType(inputType) {
   return inputType; // Return the original type if not found in type_model
 }
 
-function generateId(length) {
+function generateId() {
+  let lengthId = 16;
   const characters =
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   let id = '';
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < lengthId; i++) {
     const randomChar = characters.charAt(
       Math.floor(Math.random() * characters.length)
     );
@@ -94,7 +167,7 @@ function generateId(length) {
 function mapToID(resources) {
   const resultMapID = [];
   resources.forEach((resource) => {
-    resultMapID.push({ [resource]: generateId(16) });
+    resultMapID.push({ [resource]: generateId() });
   });
   return resultMapID;
 }
@@ -112,7 +185,7 @@ function mappingController(data) {
   data.forEach((element) => {
     let operationMapped = [];
     let controllerPackaged = `
-            <packagedElement xmi:id="${generateId(16)}" name="${
+            <packagedElement xmi:id="${generateId()}" name="${
       element.className[0]
     }" xmi:type="uml:Class">
                 <!-- <<CONTROLLER_OPERATION>> -->
@@ -141,12 +214,11 @@ function mappingController(data) {
 }
 
 function mappingRoute(data) {
+  console.log(data);
   let result = ``;
   let resultEachPath = [];
   let packaged_resource = `
-  <packagedElement xmi:id="${generateId(
-    16
-  )}" name="Resource" xmi:type="uml:Package">
+  <packagedElement xmi:id="${generateId()}" name="Route" xmi:type="uml:Package">
     <!-- <<RESOURCE_ELEM>> -->
   </packagedElement>
   `;
@@ -189,7 +261,7 @@ function mappingRoute(data) {
             const supplierValue = outputMappedID.find((obj) =>
               obj.hasOwnProperty(j.supplier)
             )[j.supplier];
-            mapRoute = `<ownedMember xmi:id="${generateId(16)}=" name="${
+            mapRoute = `<ownedMember xmi:id="${generateId()}=" name="${
               j.value
             }" xmi:type="uml:Dependency" client="${
               Object.values(item)[0]
@@ -204,7 +276,7 @@ function mappingRoute(data) {
     for (let i = 0; i < data.length; i++) {
       for (let j = 0; j < data[i].resource.length; j++) {
         if (data[i].resource[j] == Object.keys(item)[0]) {
-          mapOperation = `<ownedOperation xmi:id="${generateId(16)}" name="${
+          mapOperation = `<ownedOperation xmi:id="${generateId()}" name="${
             data[i].controllerName[j]
           }" xmi:type="uml:Operation"/>
           `;
@@ -224,6 +296,7 @@ function mappingRoute(data) {
     '<!-- <<RESOURCE_ELEM>> -->',
     resultEachPath
   );
+  console.log(result);
   return result;
 }
 
@@ -246,13 +319,13 @@ function mappingModel(data) {
   </packagedElement>
   `;
   let packaged_db = `
-  <packagedElement xmi:id="${generateId(16)}" name="${
+  <packagedElement xmi:id="${generateId()}" name="${
     data[0].database[0]
   }" xmi:type="uml:Class">
     <!-- <<DB_ELEM>> -->
   </packagedElement>`;
   let attr_db = `
-  <ownedAttribute xmi:id="${generateId(16)}" name="${
+  <ownedAttribute xmi:id="${generateId()}" name="${
     data[0].database[0]
   }" xmi:type="uml:Property"/>
   `;
@@ -285,11 +358,11 @@ function mappingModel(data) {
   `;
 
     item.relations.forEach((i) => {
-      let storeEndID = generateId(16);
-      let storeStartID = generateId(16);
+      let storeEndID = generateId();
+      let storeStartID = generateId();
       const idEndValue = mappedID.find((obj) => obj.hasOwnProperty(i))[i];
       let ownedMember = `
-      <ownedMember xmi:id="${generateId(16)}" xmi:type="uml:Association">
+      <ownedMember xmi:id="${generateId()}" xmi:type="uml:Association">
         <!-- <<Model_MEMBER>> -->
       </ownedMember>
       `;
@@ -313,7 +386,7 @@ function mappingModel(data) {
       const mappedType = mapType(a.type);
       const outputMapped = { ...a, type: mappedType };
       let attrModel = `
-      <ownedAttribute xmi:id="${generateId(16)}" name="${a.name}" type="${
+      <ownedAttribute xmi:id="${generateId()}" name="${a.name}" type="${
         outputMapped.type
       }" xmi:type="uml:Property"/>
       `;

@@ -5,7 +5,7 @@ async function dataInRoute(pathFile) {
   try {
     const fileRouteContent = await fs.readFile(pathFile, 'utf-8');
     // Define regex patterns
-    const resourcePattern = /@resource\s*:\s*\[([^\]]+)\]/;
+    const resourcePattern = /@route\s*:\s*\[([^\]]+)\]/;
     const methodNamePattern = /@methodName\s*:\s*\[([^\]]+)\]/;
     const controllerNamePattern = /@controllerName\s*:\s*\[([^\]]+)\]/;
     const dependencyRegex = /@dependency\s*:\s*(\[[\s\S]*?\])/;
