@@ -214,7 +214,6 @@ function mappingController(data) {
 }
 
 function mappingRoute(data) {
-  console.log(data);
   let result = ``;
   let resultEachPath = [];
   let packaged_resource = `
@@ -296,7 +295,6 @@ function mappingRoute(data) {
     '<!-- <<RESOURCE_ELEM>> -->',
     resultEachPath
   );
-  console.log(result);
   return result;
 }
 
