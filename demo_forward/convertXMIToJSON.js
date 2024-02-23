@@ -16,10 +16,8 @@ function convertXMIToJSON(pathFile) {
             }
             // Convert JSON to string for pretty print
             const jsonResult = JSON.stringify(result, null, 2);
-    
             // Print or save the JSON result
             // console.log('Converted JSON:', jsonResult);
-    
             // If you want to save the JSON to a file, uncomment the following lines
             const jsonFileName = './input/json/output.json';
             fs.writeFile(jsonFileName, jsonResult, 'utf-8', (err) => {

@@ -13,7 +13,7 @@
     },
     "uml:Model": {
       "$": {
-        "xmi:id": "AAAAAAGNm/wgQFDN4+s=",
+        "xmi:id": "AAAAAAGN1k9nosRRXKg=",
         "xmi:type": "uml:Model",
         "name": "RootModel"
       },
@@ -60,7 +60,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsOwDjM6aZoE=",
                         "name": "userName",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -77,7 +77,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsOwPps9IFEg=",
                         "name": "passWord",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -94,7 +94,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsOwZHtAgGNA=",
                         "name": "userId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -111,7 +111,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsOwi39D4V1c=",
                         "name": "role",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Boolean_id",
@@ -182,14 +182,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDQg/c=",
+                            "xmi:id": "AAAAAAGN1k9npMRU0Y8=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDR+5k=",
+                            "xmi:id": "AAAAAAGN1k9npMRVZR0=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -222,14 +222,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDSyEA=",
+                            "xmi:id": "AAAAAAGN1k9npMRWMw8=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDTY7w=",
+                            "xmi:id": "AAAAAAGN1k9npMRXPDA=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -264,7 +264,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPZAgFnhkdg=",
                         "name": "merchantId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -281,7 +281,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPZMeVqPVCw=",
                         "name": "name",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -298,7 +298,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPZlJls9SwU=",
                         "name": "email",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -315,7 +315,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPZwCFvrVss=",
                         "name": "phoneNumber",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -332,7 +332,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPaLs1yZhAY=",
                         "name": "address",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -349,7 +349,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPaUj11HJ04=",
                         "name": "info",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -366,7 +366,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPaeL131KXw=",
                         "name": "photo",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -437,14 +437,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDWlJA=",
+                            "xmi:id": "AAAAAAGN1k9npMRaXC4=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDXqoI=",
+                            "xmi:id": "AAAAAAGN1k9npMRbs0g=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -477,14 +477,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDYQCI=",
+                            "xmi:id": "AAAAAAGN1k9npMRcCQs=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQVDZpow=",
+                            "xmi:id": "AAAAAAGN1k9npMRdta0=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -519,7 +519,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPftn2csAy0=",
                         "name": "supplierId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -536,7 +536,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPf1nmfa6C8=",
                         "name": "name",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -553,7 +553,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPf9j2iInA0=",
                         "name": "email",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -570,7 +570,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPgGkmk2AHU=",
                         "name": "phoneNumber",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -587,7 +587,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPgVQWnkgqI=",
                         "name": "address",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -604,7 +604,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPgijmqSXvo=",
                         "name": "info",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -621,7 +621,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsPgxHGtAxHU=",
                         "name": "photo",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -692,14 +692,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlDc8Q4=",
+                            "xmi:id": "AAAAAAGN1k9npMRgvyw=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "0"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlDdNVQ=",
+                            "xmi:id": "AAAAAAGN1k9npMRhgVQ=",
                             "xmi:type": "uml:LiteralUnlimitedNatural",
                             "value": "*"
                           }
@@ -732,14 +732,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlDeZek=",
+                            "xmi:id": "AAAAAAGN1k9npMRiQ00=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlDfs2M=",
+                            "xmi:id": "AAAAAAGN1k9npMRjrho=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -774,7 +774,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMr0sH1AvL6E8=",
                         "name": "productId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -791,7 +791,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQbaDhQz+DI=",
                         "name": "productName",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -808,7 +808,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQbnCRThZEY=",
                         "name": "sku",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -825,7 +825,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQcHfRWPMac=",
                         "name": "category",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -842,7 +842,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQcbWxY9WNc=",
                         "name": "quantity",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Integer_id",
@@ -859,7 +859,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQclHxbrg6M=",
                         "name": "price",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Float_id",
@@ -876,7 +876,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsQc8CReZHRU=",
                         "name": "description",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -948,14 +948,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDijVI=",
+                              "xmi:id": "AAAAAAGN1k9npMRmBhU=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDjEBo=",
+                              "xmi:id": "AAAAAAGN1k9npMRnZrg=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -988,14 +988,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDk4uc=",
+                              "xmi:id": "AAAAAAGN1k9npMRokbQ=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDlQtE=",
+                              "xmi:id": "AAAAAAGN1k9npMRp5oY=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -1060,14 +1060,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDovTA=",
+                              "xmi:id": "AAAAAAGN1k9npcRsUXI=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDpI68=",
+                              "xmi:id": "AAAAAAGN1k9npcRte3A=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -1100,14 +1100,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDqzPE=",
+                              "xmi:id": "AAAAAAGN1k9npcRuhEE=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDrjF8=",
+                              "xmi:id": "AAAAAAGN1k9npcRvMXQ=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -1172,14 +1172,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDuRtQ=",
+                              "xmi:id": "AAAAAAGN1k9npcRyFG0=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDvXec=",
+                              "xmi:id": "AAAAAAGN1k9npcRzljA=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -1212,14 +1212,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDwh3o=",
+                              "xmi:id": "AAAAAAGN1k9npcR0rPA=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGNm/wgQlDxH3U=",
+                              "xmi:id": "AAAAAAGN1k9npcR1NgQ=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -1255,7 +1255,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsRbtrmPIqzs=",
                         "name": "orderId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -1272,7 +1272,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsRb6FGR2zmU=",
                         "name": "orderStatus",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -1289,7 +1289,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsRg1N34eRio=",
                         "name": "orderDate",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Date_id",
@@ -1360,14 +1360,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlD0UlA=",
+                            "xmi:id": "AAAAAAGN1k9npcR4QDk=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "0"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlD1tZk=",
+                            "xmi:id": "AAAAAAGN1k9npcR5HSU=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1400,14 +1400,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlD2qx4=",
+                            "xmi:id": "AAAAAAGN1k9npcR6mGs=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGNm/wgQlD3mUU=",
+                            "xmi:id": "AAAAAAGN1k9npcR76LY=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1442,7 +1442,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsR8XbVqOFkA=",
                         "name": "imageId",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "Id_id",
@@ -1459,7 +1459,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsR8gJ1s8MQA=",
                         "name": "fileName",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -1476,7 +1476,7 @@
                       "$": {
                         "xmi:id": "AAAAAAGMsR8pylvqDds=",
                         "name": "filePath",
-                        "visibility": "private",
+                        "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
                         "type": "String_id",
@@ -3014,7 +3014,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQlD4Hko=",
+                  "xmi:id": "AAAAAAGN1k9npsR8GDk=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3024,7 +3024,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQlD5lug=",
+                    "xmi:id": "AAAAAAGN1k9npsR9LcM=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMmc+pm15OkLo="
                   }
@@ -3035,7 +3035,7 @@
                   "xmi:id": "AAAAAAGMtN6dTFg9ixA=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQlD4Hko="
+                  "association": "AAAAAAGN1k9npsR8GDk="
                 },
                 "type": {
                   "$": {
@@ -3057,7 +3057,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1D6vzU=",
+                  "xmi:id": "AAAAAAGN1k9npsR+HAo=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3067,7 +3067,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1D7OXo=",
+                    "xmi:id": "AAAAAAGN1k9npsR/8v4=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMmdUuwV9zed8="
                   }
@@ -3078,7 +3078,7 @@
                   "xmi:id": "AAAAAAGMmfkBCWv/o80=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1D6vzU="
+                  "association": "AAAAAAGN1k9npsR+HAo="
                 },
                 "type": {
                   "$": {
@@ -3100,7 +3100,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1D8q5w=",
+                  "xmi:id": "AAAAAAGN1k9npsSAvqE=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3110,7 +3110,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1D954M=",
+                    "xmi:id": "AAAAAAGN1k9npsSBw7A=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMmdhx6F/AjOw="
                   }
@@ -3121,7 +3121,7 @@
                   "xmi:id": "AAAAAAGMtN6oOVhOzPk=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1D8q5w="
+                  "association": "AAAAAAGN1k9npsSAvqE="
                 },
                 "type": {
                   "$": {
@@ -3143,7 +3143,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1D+dYE=",
+                  "xmi:id": "AAAAAAGN1k9npsSC2QA=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3153,7 +3153,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1D/v2E=",
+                    "xmi:id": "AAAAAAGN1k9npsSDyXY=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMmdjJmGABFtE="
                   }
@@ -3164,7 +3164,7 @@
                   "xmi:id": "AAAAAAGMtN607FhfT5Q=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1D+dYE="
+                  "association": "AAAAAAGN1k9npsSC2QA="
                 },
                 "type": {
                   "$": {
@@ -3291,7 +3291,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1EAS0w=",
+                  "xmi:id": "AAAAAAGN1k9npsSEge4=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3301,7 +3301,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EBJYU=",
+                    "xmi:id": "AAAAAAGN1k9npsSFG84=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMmgYuNHQtJpU="
                   }
@@ -3312,7 +3312,7 @@
                   "xmi:id": "AAAAAAGMtN7AQVhwLFQ=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1EAS0w="
+                  "association": "AAAAAAGN1k9npsSEge4="
                 },
                 "type": {
                   "$": {
@@ -3334,7 +3334,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1ECi0Y=",
+                  "xmi:id": "AAAAAAGN1k9npsSG8wg=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3344,7 +3344,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EDdv4=",
+                    "xmi:id": "AAAAAAGN1k9npsSHXg4=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGMt9vIbknkDC0="
                   }
@@ -3355,7 +3355,7 @@
                   "xmi:id": "AAAAAAGMt9vWmUoQc98=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1ECi0Y="
+                  "association": "AAAAAAGN1k9npsSG8wg="
                 },
                 "type": {
                   "$": {
@@ -3377,7 +3377,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1EEYBo=",
+                  "xmi:id": "AAAAAAGN1k9npsSIJ4U=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3387,7 +3387,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EFc/4=",
+                    "xmi:id": "AAAAAAGN1k9npsSJGhk=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGNm5Co5cFN9D8="
                   }
@@ -3398,7 +3398,7 @@
                   "xmi:id": "AAAAAAGNm5DLE8F70SM=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1EEYBo="
+                  "association": "AAAAAAGN1k9npsSIJ4U="
                 },
                 "type": {
                   "$": {
@@ -3420,7 +3420,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1EG1Pk=",
+                  "xmi:id": "AAAAAAGN1k9npsSKpWw=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3430,7 +3430,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EH5ZY=",
+                    "xmi:id": "AAAAAAGN1k9npsSLlVs=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGNm5oWZRtT9D4="
                   }
@@ -3441,7 +3441,7 @@
                   "xmi:id": "AAAAAAGNm5rbixvhOj4=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1EG1Pk="
+                  "association": "AAAAAAGN1k9npsSKpWw="
                 },
                 "type": {
                   "$": {
@@ -3463,7 +3463,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1EIlfo=",
+                  "xmi:id": "AAAAAAGN1k9npsSMfwk=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3473,7 +3473,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EJPIM=",
+                    "xmi:id": "AAAAAAGN1k9npsSNmIA=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGNm5po0huBmFk="
                   }
@@ -3484,7 +3484,7 @@
                   "xmi:id": "AAAAAAGNm5rn2hvyrWM=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1EIlfo="
+                  "association": "AAAAAAGN1k9npsSMfwk="
                 },
                 "type": {
                   "$": {
@@ -3506,7 +3506,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGNm/wgQ1EKdms=",
+                  "xmi:id": "AAAAAAGN1k9npsSOT6A=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -3516,7 +3516,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGNm/wgQ1EL9sM=",
+                    "xmi:id": "AAAAAAGN1k9npsSPkSU=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGNm5qaXhuyzhc="
                   }
@@ -3527,7 +3527,7 @@
                   "xmi:id": "AAAAAAGNm5rzPBwD6KY=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGNm/wgQ1EKdms="
+                  "association": "AAAAAAGN1k9npsSOT6A="
                 },
                 "type": {
                   "$": {
