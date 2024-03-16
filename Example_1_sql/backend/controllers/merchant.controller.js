@@ -4,12 +4,32 @@
  * @className :["MerchantController"]
  */
       
-const getMerchantInfo = asyncHandler(async (req, res) => { })
+const asyncHandler = require("express-async-handler");
 
-const updateMerchantInfo = asyncHandler(async (req, res) => { })
+const getMerchantInfo = asyncHandler(async (req, res) => { 
+    res.send('getMerchantInfo');
+})
 
-const login = asyncHandler(async (req, res) => { })
+const updateMerchantInfo = asyncHandler(async (req, res) => { 
+    res.send('updateMerchantInfo');
+})
 
-const logout = asyncHandler(async (req, res) => { })
+const login = asyncHandler(async (req, res) => { 
+    res.send('login');
+})
 
-const register = asyncHandler(async (req, res) => { })
+const logout = asyncHandler(async (req, res) => { 
+    res.send('logout');
+})
+
+const register = asyncHandler(async (req, res) => {
+    res.send('register');
+ })
+
+module.exports = {
+    getMerchantInfo,
+    updateMerchantInfo,
+    login,
+    logout,
+    register
+}

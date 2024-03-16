@@ -3,13 +3,34 @@
  * @controllerName :["getProducts","getProduct","createProduct","updateProduct","deleteProduct"]
  * @className :["ProductController"]
  */
+
+const asyncHandler = require("express-async-handler");
       
-const getProducts = asyncHandler(async (req, res) => { })
+const getProducts = asyncHandler(async (req, res) => { 
+    res.send('getProducts');
+})
 
-const getProduct = asyncHandler(async (req, res) => { })
+const getProduct = asyncHandler(async (req, res) => { 
+    console.log(req.params.productId);
+    res.send('getProduct');
+})
 
-const createProduct = asyncHandler(async (req, res) => { })
+const createProduct = asyncHandler(async (req, res) => { 
+    res.send('createProduct');
+})
 
-const updateProduct = asyncHandler(async (req, res) => { })
+const updateProduct = asyncHandler(async (req, res) => { 
+    res.send('updateProduct');
+})
 
-const deleteProduct = asyncHandler(async (req, res) => { })
+const deleteProduct = asyncHandler(async (req, res) => { 
+    res.send('deleteProduct');
+})
+
+module.exports = {
+    getProducts,
+    getProduct,
+    createProduct,
+    updateProduct,
+    deleteProduct
+}

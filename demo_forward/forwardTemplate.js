@@ -64,7 +64,7 @@ function generateRouter(data) {
         method = mapProfileObj[opr.method];
         path = element.name.toLowerCase().replace('route', '');
         controller = opr.nameOpr;
-        templateRoute = `\nrouter.${method.toLowerCase()}("/${path}", ${controller});`;
+        templateRoute = `\nrouter.${method.toLowerCase()}("/${path}/${controller}", ${controller});`;
         content = templateRoute;
         resource.push(element.name);
         methodName.push(method);
@@ -105,7 +105,7 @@ function generateRouter(data) {
                   .toLowerCase()
                   .replace('route', '')}${defineNewPath}`;
                 controller = elem_opr.nameOpr;
-                templateRoute = `\nrouter.${method.toLowerCase()}("/${path}", ${controller});`;
+                templateRoute = `\nrouter.${method.toLowerCase()}("/${path}/${controller}", ${controller});`;
                 content = templateRoute;
                 controllerName.push(controller);
                 newPath.contentFile.push(content);

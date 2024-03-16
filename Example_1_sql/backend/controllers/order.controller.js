@@ -3,9 +3,23 @@
  * @controllerName :["createOrder","updateOrder","getOrder"]
  * @className :["OrderController"]
  */
-      
-const createOrder = asyncHandler(async (req, res) => { })
+const asyncHandler = require("express-async-handler");
+    
 
-const updateOrder = asyncHandler(async (req, res) => { })
+const createOrder = asyncHandler(async (req, res) => {
+    res.send('createOrder');
+ })
 
-const getOrder = asyncHandler(async (req, res) => { })
+const updateOrder = asyncHandler(async (req, res) => {
+    res.send('updateOrder');
+ })
+
+const getOrder = asyncHandler(async (req, res) => {
+    res.send('getOrder');
+ })
+
+module.exports = {
+    createOrder,
+    updateOrder,
+    getOrder
+}

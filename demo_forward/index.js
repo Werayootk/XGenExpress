@@ -6,7 +6,7 @@ const fileNameSQL = './input/xmi/xmi_mysql.xmi';
 const fileNameNoSQL = './input/xmi/xmi_mongodb.xmi';
 const fileOutput = './input/json/output.json';
 const { convertXMIToJSON } = require('./convertXMIToJSON');
-let isConverted = convertXMIToJSON(fileNameNoSQL); 
+let isConverted = convertXMIToJSON(fileNameSQL); 
 function main() {
     if (isConverted || fs.existsSync(fileOutput)) {
         const processJsonFile = require('./processJson');
