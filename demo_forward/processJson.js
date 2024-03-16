@@ -191,15 +191,12 @@ function processJsonFile(jsonFileName) {
   }
 
   try {
-    // Read JSON file
     const jsonData = fs.readFileSync(jsonFileName, "utf-8");
-    // Parse JSON
     const jsonObj = JSON.parse(jsonData);
     if (
       jsonObj["xmi:XMI"]["uml:Model"].$["xmi:type"] === "uml:Model" &&
       jsonObj["xmi:XMI"]["uml:Model"].$.name === "RootModel"
     ) {
-      // Mapping Profile
       const uml = jsonObj["xmi:XMI"]["uml:Model"].packagedElement;
       let package;
       for (const obj of uml) {

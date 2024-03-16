@@ -35,13 +35,10 @@ function main() {
         const folderNameModel = folderNameService+'/'+'models';
         const folderNameController = folderNameService+'/'+'controllers';
         
-        // Create file from content
         function createRouteFiles(pathFile) {
             routeContent.forEach(item => {
                 const pathFolderAndFile = pathFile + "/" + item.nameOfFile;
-                // Join the contentFile array elements into a single string
                 const fileContent = item.contentWithComment.join('');
-                // Write or append the content to the file
                 fs.writeFileSync(pathFolderAndFile, fileContent, (err) => {
                     if (err) {
                         console.error('Error writing to file:', err);
@@ -55,9 +52,7 @@ function main() {
         function createModelFiles(pathFile) {
             modelContent.forEach(item => {
                 const pathFolderAndFile = pathFile + "/" + item.nameOfFile;
-                // Join the contentFile array elements into a single string
                 const fileContent = item.contentFile.join('');
-                // Write or append the content to the file
                 fs.writeFileSync(pathFolderAndFile, fileContent, (err) => {
                     if (err) {
                         console.error('Error writing to file:', err);
@@ -71,9 +66,7 @@ function main() {
         function createControllerFiles(pathFile) {
             controllerContent.forEach(item => {
                 const pathFolderAndFile = pathFile + "/" + item.nameOfFile;
-                // Join the contentFile array elements into a single string
                 const fileContent = item.contentFile.join('');
-                // Write or append the content to the file
                 fs.writeFileSync(pathFolderAndFile, fileContent, (err) => {
                     if (err) {
                         console.error('Error writing to file:', err);

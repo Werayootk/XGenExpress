@@ -176,26 +176,19 @@ function mappingController(data) {
   let result = ``;
   let resultEachClass = [];
   const packaged_controller = `
-  <packagedElement xmi:id="${generateId(
-    16
-  )}" name="Controller" xmi:type="uml:Package">
+  <packagedElement xmi:id="${generateId()}" name="Controller" xmi:type="uml:Package">
     <!-- <<CONTROLLER_ELEM>> -->
   </packagedElement>
     `;
   data.forEach((element) => {
     let operationMapped = [];
     let controllerPackaged = `
-            <packagedElement xmi:id="${generateId()}" name="${
-      element.className[0]
-    }" xmi:type="uml:Class">
+            <packagedElement xmi:id="${generateId()}" name="${element.className[0]}" xmi:type="uml:Class">
                 <!-- <<CONTROLLER_OPERATION>> -->
             </packagedElement>
-            `;
+          `;
     element.controllerName.forEach((elem) => {
-      let operationMap = `
-            <ownedOperation xmi:id="${generateId(
-              16
-            )}" name="${elem}" xmi:type="uml:Operation"/>`;
+      let operationMap = `<ownedOperation xmi:id="${generateId()}" name="${elem}" xmi:type="uml:Operation"/>`;
       operationMapped.push(operationMap);
     });
     const operationContent = operationMapped.join('');
@@ -244,11 +237,10 @@ function mappingRoute(data) {
     resultMappedOperation = [];
     const uniqueCombinations = new Set();
     let packaged_route = `
-    <packagedElement xmi:id="${Object.values(item)[0]}" name="${
-      Object.keys(item)[0]
-    }" xmi:type="uml:Class">
+    <packagedElement xmi:id="${Object.values(item)[0]}" name="${Object.keys(item)[0]}" xmi:type="uml:Class">
       <!-- <<ROUTE_ELEM>> -->
-    </packagedElement>`;
+    </packagedElement>
+    `;
 
     // Mapped Route
     for (let i = 0; i < data.length; i++) {
@@ -260,9 +252,7 @@ function mappingRoute(data) {
             const supplierValue = outputMappedID.find((obj) =>
               obj.hasOwnProperty(j.supplier)
             )[j.supplier];
-            mapRoute = `<ownedMember xmi:id="${generateId()}=" name="${
-              j.value
-            }" xmi:type="uml:Dependency" client="${
+            mapRoute = `<ownedMember xmi:id="${generateId()}=" name="${j.value}" xmi:type="uml:Dependency" client="${
               Object.values(item)[0]
             }" supplier="${supplierValue}"/>
             `;
@@ -303,29 +293,21 @@ function mappingModel(data) {
   let resultEachModel = [];
   let resultDB = [];
   let packaged_model = `
-  <packagedElement xmi:id="${generateId(
-    16
-  )}" name="Model" xmi:type="uml:Package">
+  <packagedElement xmi:id="${generateId()}" name="Model" xmi:type="uml:Package">
     <!-- <<MODEL_ELEM>> -->
   </packagedElement>
   `;
   let packaged_database = `
-  <packagedElement xmi:id="${generateId(
-    16
-  )}" name="Database" xmi:type="uml:Package">
+  <packagedElement xmi:id="${generateId()}" name="Database" xmi:type="uml:Package">
     <!-- <<DATABASE_ELEM>> -->
   </packagedElement>
   `;
   let packaged_db = `
-  <packagedElement xmi:id="${generateId()}" name="${
-    data[0].database[0]
-  }" xmi:type="uml:Class">
+  <packagedElement xmi:id="${generateId()}" name="${data[0].database[0]}" xmi:type="uml:Class">
     <!-- <<DB_ELEM>> -->
   </packagedElement>`;
   let attr_db = `
-  <ownedAttribute xmi:id="${generateId()}" name="${
-    data[0].database[0]
-  }" xmi:type="uml:Property"/>
+  <ownedAttribute xmi:id="${generateId()}" name="${data[0].database[0]}" xmi:type="uml:Property"/>
   `;
   packaged_db = packaged_db.replace('<!-- <<DB_ELEM>> -->', attr_db);
   packaged_database = packaged_database.replace(
@@ -384,9 +366,7 @@ function mappingModel(data) {
       const mappedType = mapType(a.type);
       const outputMapped = { ...a, type: mappedType };
       let attrModel = `
-      <ownedAttribute xmi:id="${generateId()}" name="${a.name}" type="${
-        outputMapped.type
-      }" xmi:type="uml:Property"/>
+      <ownedAttribute xmi:id="${generateId()}" name="${a.name}" type="${outputMapped.type}" xmi:type="uml:Property"/>
       `;
       attrMapped.push(attrModel);
     });
@@ -406,9 +386,7 @@ function mappingModel(data) {
 function generateXMI(data) {
   let xmi = ``;
   const core_packaged_template = `
-    <packagedElement xmi:id="${generateId(
-      16
-    )}" name="backend" xmi:type="uml:Model">
+    <packagedElement xmi:id="${generateId()}" name="backend" xmi:type="uml:Model">
         <!-- <<PACKAGED_MODEL>> -->
         <!-- <<PACKAGED_CONTROLLER>> -->
         <!-- <<PACKAGED_DATABASE>> -->
