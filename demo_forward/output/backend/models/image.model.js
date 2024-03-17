@@ -2,30 +2,32 @@
 
 /**
  * @model :["ImageModel"]
- * @database :["MySql"]
+ * @database :["MongoDB"]
  * @attribute :[{"name":"imageId","type":"Id"},{"name":"fileName","type":"String"},{"name":"filePath","type":"String"}]
  * @relations :["ProductModel"]
  */
-      
-module.exports = (sequelize, DataTypes) => {
-  const Image = sequelize.define(
-    "Image",
-    {
-      
-imageId: {
-type: DataTypes.Id,
-},
-fileName: {
-type: DataTypes.String,
-},
-filePath: {
-type: DataTypes.String,
-},
-    },{
-      timestamps: false
-    }
-  );
-
-  return Image;
-};
-      
+  
+const mongoose = require("mongoose");
+const imageSchema = mongoose.Schema(
+  {
+    
+  imageId: {
+    type: Id
+  },
+    
+  fileName: {
+    type: String
+  },
+    
+  filePath: {
+    type: String
+  },
+    
+  },
+  {
+    timestamps: true,
+  }
+);
+const Image = mongoose.model("Image", imageSchema);
+module.exports = Image;
+  

@@ -2,33 +2,36 @@
 
 /**
  * @model :["UserModel"]
- * @database :["MySql"]
+ * @database :["MongoDB"]
  * @attribute :[{"name":"userName","type":"String"},{"name":"passWord","type":"String"},{"name":"userId","type":"Id"},{"name":"role","type":"Boolean"}]
- * @relations :["SupplierModel","MerchantModel"]
+ * @relations :[]
  */
-      
-module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define(
-    "User",
-    {
-      
-userName: {
-type: DataTypes.String,
-},
-passWord: {
-type: DataTypes.String,
-},
-userId: {
-type: DataTypes.Id,
-},
-role: {
-type: DataTypes.Boolean,
-},
-    },{
-      timestamps: false
-    }
-  );
-
-  return User;
-};
-      
+  
+const mongoose = require("mongoose");
+const userSchema = mongoose.Schema(
+  {
+    
+  userName: {
+    type: String
+  },
+    
+  passWord: {
+    type: String
+  },
+    
+  userId: {
+    type: Id
+  },
+    
+  role: {
+    type: Boolean
+  },
+    
+  },
+  {
+    timestamps: true,
+  }
+);
+const User = mongoose.model("User", userSchema);
+module.exports = User;
+  

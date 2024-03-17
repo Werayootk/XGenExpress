@@ -2,30 +2,32 @@
 
 /**
  * @model :["OrderModel"]
- * @database :["MySql"]
+ * @database :["MongoDB"]
  * @attribute :[{"name":"orderId","type":"Id"},{"name":"orderStatus","type":"String"},{"name":"orderDate","type":"Date"}]
- * @relations :[]
+ * @relations :["ProductModel","SupplierModel","MerchantModel"]
  */
-      
-module.exports = (sequelize, DataTypes) => {
-  const Order = sequelize.define(
-    "Order",
-    {
-      
-orderId: {
-type: DataTypes.Id,
-},
-orderStatus: {
-type: DataTypes.String,
-},
-orderDate: {
-type: DataTypes.Date,
-},
-    },{
-      timestamps: false
-    }
-  );
-
-  return Order;
-};
-      
+  
+const mongoose = require("mongoose");
+const orderSchema = mongoose.Schema(
+  {
+    
+  orderId: {
+    type: Id
+  },
+    
+  orderStatus: {
+    type: String
+  },
+    
+  orderDate: {
+    type: Date
+  },
+    
+  },
+  {
+    timestamps: true,
+  }
+);
+const Order = mongoose.model("Order", orderSchema);
+module.exports = Order;
+  

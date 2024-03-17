@@ -255,9 +255,11 @@ module.exports = (sequelize, DataTypes) => {
       if (element.attribute?.length != 0) {
         element.attribute.forEach((attr) => {
           attribute.push({ name: attr.attrName, type: mapType[attr.attrType] });
-          fieldTemplate += `${attr.attrName}: {
-      type: ${mapType[attr.attrType] || ''}
-    },`;
+          fieldTemplate += `
+  ${attr.attrName}: {
+    type: ${mapType[attr.attrType] || ''}
+  },
+    `;
         });
         let commentSection = `
 /**
@@ -269,20 +271,34 @@ module.exports = (sequelize, DataTypes) => {
   `;
         let modelTemplate = `
 ${commentSection}
-class ${element.name.replace('Model', '')} {
-  constructor() {
-    this.schema = new mongoose.Schema({
-      ${fieldTemplate}              
-    });
-    this.model = mongoose.model('${element.name.replace(
-      'Model',
-      ''
-    )}', this.schema);
+const mongoose = require("mongoose");
+const ${element.name.toLowerCase().replace('model', '') + 'Schema'} = mongoose.Schema(
+  {
+    ${fieldTemplate}
+  },
+  {
+    timestamps: true,
   }
-}
-
+);
+const ${element.name.replace('Model', '')} = mongoose.model("${element.name.replace('Model', '')}", ${element.name.toLowerCase().replace('model', '') + 'Schema'});
 module.exports = ${element.name.replace('Model', '')};
   `;
+  // let modelTemplate = `
+  // ${commentSection}
+  // class ${element.name.replace('Model', '')} {
+  //   constructor() {
+  //     this.schema = new mongoose.Schema({
+  //       ${fieldTemplate}              
+  //     });
+  //     this.model = mongoose.model('${element.name.replace(
+  //       'Model',
+  //       ''
+  //     )}', this.schema);
+  //   }
+  // }
+  
+  // module.exports = ${element.name.replace('Model', '')};
+  //   `;
         newModel.contentFile.push(modelTemplate);
         result.push(newModel);
       }
