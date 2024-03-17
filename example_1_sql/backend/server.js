@@ -6,7 +6,7 @@ const cors = require("cors");
 const errorHandler = require("./middleWare/error.middleware");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-// const { sequelize } = require("./models")
+const { sequelize } = require("./models")
 
 // Import route files
 const userRoutes = require('./routes/users.route');
