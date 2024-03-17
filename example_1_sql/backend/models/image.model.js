@@ -13,13 +13,13 @@ module.exports = (sequelize, DataTypes) => {
     {
       
 imageId: {
-type: DataTypes.Id,
+type: DataTypes.ID,
 },
 fileName: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 filePath: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
     },{
       timestamps: false

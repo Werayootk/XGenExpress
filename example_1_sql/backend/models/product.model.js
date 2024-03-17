@@ -13,25 +13,25 @@ module.exports = (sequelize, DataTypes) => {
     {
       
 productId: {
-type: DataTypes.Id,
+type: DataTypes.ID,
 },
 productName: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 sku: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 category: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 quantity: {
-type: DataTypes.Integer,
+type: DataTypes.INTEGER,
 },
 price: {
-type: DataTypes.Float,
+type: DataTypes.FLOAT,
 },
 description: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
     },{
       timestamps: false

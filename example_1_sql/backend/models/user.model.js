@@ -13,16 +13,16 @@ module.exports = (sequelize, DataTypes) => {
     {
       
 userName: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 passWord: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 userId: {
-type: DataTypes.Id,
+type: DataTypes.ID,
 },
 role: {
-type: DataTypes.Boolean,
+type: DataTypes.BOOLEAN,
 },
     },{
       timestamps: false

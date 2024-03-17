@@ -13,13 +13,13 @@ module.exports = (sequelize, DataTypes) => {
     {
       
 orderId: {
-type: DataTypes.Id,
+type: DataTypes.ID,
 },
 orderStatus: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 orderDate: {
-type: DataTypes.Date,
+type: DataTypes.DATE,
 },
     },{
       timestamps: false

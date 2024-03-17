@@ -200,7 +200,7 @@ function generateModel(data) {
           attribute.push({ name: attr.attrName, type: mapType[attr.attrType] });
           fieldTemplate += `
 ${attr.attrName}: {
-type: DataTypes.${mapType[attr.attrType] || ''},
+type: DataTypes.${mapType[attr.attrType].toUpperCase()},
 },`;
         });
         let commentSection = `

@@ -13,25 +13,25 @@ module.exports = (sequelize, DataTypes) => {
     {
       
 supplierId: {
-type: DataTypes.Id,
+type: DataTypes.ID,
 },
 name: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 email: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 phoneNumber: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 address: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 info: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
 photo: {
-type: DataTypes.String,
+type: DataTypes.STRING,
 },
     },{
       timestamps: false
