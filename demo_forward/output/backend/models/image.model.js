@@ -1,29 +1,31 @@
 
+
+/**
+ * @model :["ImageModel"]
+ * @database :["MySql"]
+ * @attribute :[{"name":"imageId","type":"Id"},{"name":"fileName","type":"String"},{"name":"filePath","type":"String"}]
+ * @relations :["ProductModel"]
+ */
       
-      /**
-       * @model :["ImageModel"]
-       * @database :["MySql"]
-       * @attribute :[{"name":"imageId","type":"Id"},{"name":"fileName","type":"String"},{"name":"filePath","type":"String"}]
-       * @relations :["ProductModel"]
-       */
+module.exports = (sequelize, DataTypes) => {
+  const Image = sequelize.define(
+    "Image",
+    {
       
-      class Image extends Model {}
-        Image.init(
-          {
-            imageId: {
-          type: DataTypes.Id,
-        },fileName: {
-          type: DataTypes.String,
-        },filePath: {
-          type: DataTypes.String,
-        },
-          },
-          {
-            sequelize,
-            modelName: 'Image',
-            tableName: 'images',
-            timestamps: false,
-          }
-        );
-        module.exports = Image;
+imageId: {
+type: DataTypes.Id,
+},
+fileName: {
+type: DataTypes.String,
+},
+filePath: {
+type: DataTypes.String,
+},
+    },{
+      timestamps: false
+    }
+  );
+
+  return Image;
+};
       

@@ -198,35 +198,33 @@ function generateModel(data) {
       if (element.attribute?.length != 0) {
         element.attribute.forEach((attr) => {
           attribute.push({ name: attr.attrName, type: mapType[attr.attrType] });
-          fieldTemplate += `${attr.attrName}: {
-          type: DataTypes.${mapType[attr.attrType] || ''},
-        },`;
+          fieldTemplate += `
+${attr.attrName}: {
+type: DataTypes.${mapType[attr.attrType] || ''},
+},`;
         });
         let commentSection = `
-      /**
-       * @model :${JSON.stringify(model)}
-       * @database :${JSON.stringify(database)}
-       * @attribute :${JSON.stringify(attribute)}
-       * @relations :${JSON.stringify(relations)}
-       */
+/**
+ * @model :${JSON.stringify(model)}
+ * @database :${JSON.stringify(database)}
+ * @attribute :${JSON.stringify(attribute)}
+ * @relations :${JSON.stringify(relations)}
+ */
       `;
         let modelTemplate = `
-      ${commentSection}
-      class ${element.name.replace('Model', '')} extends Model {}
-        ${element.name.replace('Model', '')}.init(
-          {
-            ${fieldTemplate}
-          },
-          {
-            sequelize,
-            modelName: '${element.name.replace('Model', '')}',
-            tableName: '${
-              element.name.toLowerCase().replace('model', '') + 's'
-            }',
-            timestamps: false,
-          }
-        );
-        module.exports = ${element.name.replace('Model', '')};
+${commentSection}
+module.exports = (sequelize, DataTypes) => {
+  const ${element.name.replace('Model', '')} = sequelize.define(
+    "${element.name.replace('Model', '')}",
+    {
+      ${fieldTemplate}
+    },{
+      timestamps: false
+    }
+  );
+
+  return ${element.name.replace('Model', '')};
+};
       `;
         newModel.contentFile.push(modelTemplate);
         result.push(newModel);
@@ -262,28 +260,28 @@ function generateModel(data) {
     },`;
         });
         let commentSection = `
-  /**
-   * @model :${JSON.stringify(model)}
-   * @database :${JSON.stringify(database)}
-   * @attribute :${JSON.stringify(attribute)}
-   * @relations :${JSON.stringify(relations)}
-   */
+/**
+ * @model :${JSON.stringify(model)}
+ * @database :${JSON.stringify(database)}
+ * @attribute :${JSON.stringify(attribute)}
+ * @relations :${JSON.stringify(relations)}
+ */
   `;
         let modelTemplate = `
-  ${commentSection}
-  class ${element.name.replace('Model', '')} {
-    constructor() {
-      this.schema = new mongoose.Schema({
-        ${fieldTemplate}              
-      });
-      this.model = mongoose.model('${element.name.replace(
-        'Model',
-        ''
-      )}', this.schema);
-    }
+${commentSection}
+class ${element.name.replace('Model', '')} {
+  constructor() {
+    this.schema = new mongoose.Schema({
+      ${fieldTemplate}              
+    });
+    this.model = mongoose.model('${element.name.replace(
+      'Model',
+      ''
+    )}', this.schema);
   }
-  
-  module.exports = ${element.name.replace('Model', '')};
+}
+
+module.exports = ${element.name.replace('Model', '')};
   `;
         newModel.contentFile.push(modelTemplate);
         result.push(newModel);
