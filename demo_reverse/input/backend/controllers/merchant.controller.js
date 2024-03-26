@@ -1,15 +1,15 @@
 
 /**
- * @controllerName :["getMerchantInfo","updateMerchantInfo","login","logout","register"]
+ * @controllerName :["login","logout","register","updateInfo","forgetPassword"]
  * @className :["MerchantController"]
  */
       
-const getMerchantInfo = asyncHandler(async (req, res) => { })
-
-const updateMerchantInfo = asyncHandler(async (req, res) => { })
-
 const login = asyncHandler(async (req, res) => { })
 
 const logout = asyncHandler(async (req, res) => { })
 
 const register = asyncHandler(async (req, res) => { })
+
+const updateInfo = asyncHandler(async (req, res) => { })
+
+const forgetPassword = asyncHandler(async (req, res) => { })

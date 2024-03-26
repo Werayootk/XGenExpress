@@ -129,9 +129,17 @@ function generateRouter(data) {
  * @controllerName :${JSON.stringify(controllerName)}
  * @dependency :${JSON.stringify(dependency)}
  */
+
+const express = require("express");
+
+const router = express.Router();
         `;
+      let exportSection = `
+
+module.exports = router;
+      `;
       const concatenatedString = newPath.contentFile.join('');
-      commentSection = commentSection + concatenatedString;
+      commentSection = commentSection + concatenatedString + exportSection;
       newPath.contentWithComment.push(commentSection);
       result.push(newPath);
     }
@@ -324,6 +332,7 @@ function generateController(data) {
       nameOfFile: '',
       contentFile: [],
     };
+    let controllerTemplate = '';
     newController.nameOfFile = `${element.name
       .toLowerCase()
       .replace('controller', '')}.controller.js`;
@@ -334,6 +343,8 @@ function generateController(data) {
       let controllerName = [];
       element.operation.forEach((opr) => {
         controllerName.push(opr.nameOpr);
+        controllerTemplate +=
+          `${opr.nameOpr},\n`;
         let templateController = `
 const ${opr.nameOpr} = asyncHandler(async (req, res) => { })\n`;
         controllerContent += templateController;
@@ -343,8 +354,16 @@ const ${opr.nameOpr} = asyncHandler(async (req, res) => { })\n`;
  * @controllerName :${JSON.stringify(controllerName)}
  * @className :${JSON.stringify(className)}
  */
+
+const asyncHandler = require("express-async-handler");
       `;
-      let contentWithComment = commentSection + controllerContent;
+
+      let exportSection = `
+module.exports = {
+  ${controllerTemplate}
+};
+      `
+      let contentWithComment = commentSection + controllerContent + exportSection;
       newController.contentFile.push(contentWithComment);
     }
     result.push(newController);
