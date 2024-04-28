@@ -13,7 +13,7 @@
     },
     "uml:Model": {
       "$": {
-        "xmi:id": "AAAAAAGOc7NXMusI9Hs=",
+        "xmi:id": "AAAAAAGOfhojIZmMy2w=",
         "xmi:type": "uml:Model",
         "name": "RootModel"
       },
@@ -36,7 +36,7 @@
               "packagedElement": {
                 "$": {
                   "xmi:id": "AAAAAAGOajJbYFrwtAg=",
-                  "name": "MySql",
+                  "name": "MongoDB",
                   "visibility": "public",
                   "isAbstract": "false",
                   "isFinalSpecialization": "false",
@@ -57,7 +57,7 @@
                 "ownedAttribute": {
                   "$": {
                     "xmi:id": "AAAAAAGOajJ9/1sas+c=",
-                    "name": "MySql",
+                    "name": "MongoDB",
                     "visibility": "public",
                     "isStatic": "false",
                     "isLeaf": "false",
@@ -104,7 +104,7 @@
                   "ownedMember": [
                     {
                       "$": {
-                        "xmi:id": "AAAAAAGOc6tTzVdQY/w=",
+                        "xmi:id": "AAAAAAGOeV73XWkRmWw=",
                         "visibility": "public",
                         "xmi:type": "uml:Association",
                         "isDerived": "false"
@@ -112,7 +112,7 @@
                       "ownedEnd": [
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6tTzVdRTls=",
+                            "xmi:id": "AAAAAAGOeV73XWkSzwo=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -137,14 +137,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusLbuk=",
+                              "xmi:id": "AAAAAAGOfhojI5mPzks=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusM5pg=",
+                              "xmi:id": "AAAAAAGOfhojJJmQMHI=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -152,211 +152,7 @@
                         },
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6tTzVdSVlo=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakVobFv3q7U="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusN3rM=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "0"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusO3WU=",
-                              "xmi:type": "uml:LiteralUnlimitedNatural",
-                              "value": "*"
-                            }
-                          }
-                        }
-                      ],
-                      "memberEnd": [
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc6tTzVdRTls="
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc6tTzVdSVlo="
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "$": {
-                        "xmi:id": "AAAAAAGOc6t8rVf2C1I=",
-                        "visibility": "public",
-                        "xmi:type": "uml:Association",
-                        "isDerived": "false"
-                      },
-                      "ownedEnd": [
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc6t8rVf39X0=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakP4uFtHMBA="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusRALA=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusSDjQ=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc6t8rVf4vhg=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakcEiFyq5sg="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusT9wg=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "0"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusUs8E=",
-                              "xmi:type": "uml:LiteralUnlimitedNatural",
-                              "value": "*"
-                            }
-                          }
-                        }
-                      ],
-                      "memberEnd": [
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc6t8rVf39X0="
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc6t8rVf4vhg="
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "$": {
-                        "xmi:id": "AAAAAAGOc6uTbVi0/gU=",
-                        "visibility": "public",
-                        "xmi:type": "uml:Association",
-                        "isDerived": "false"
-                      },
-                      "ownedEnd": [
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc6uTbVi17Ms=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakP4uFtHMBA="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusXA90=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusYZ2I=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc6uTbVi2kBs=",
+                            "xmi:id": "AAAAAAGOeV73XWkTQqU=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -381,14 +177,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusZYzA=",
+                              "xmi:id": "AAAAAAGOfhojJJmRhms=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXMusaEdg=",
+                              "xmi:id": "AAAAAAGOfhojJJmSOVM=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -398,19 +194,19 @@
                       "memberEnd": [
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6uTbVi17Ms="
+                            "xmi:idref": "AAAAAAGOeV73XWkSzwo="
                           }
                         },
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6uTbVi2kBs="
+                            "xmi:idref": "AAAAAAGOeV73XWkTQqU="
                           }
                         }
                       ]
                     },
                     {
                       "$": {
-                        "xmi:id": "AAAAAAGOc6u9Q1qP5vM=",
+                        "xmi:id": "AAAAAAGOeWBMkXLQlCM=",
                         "visibility": "public",
                         "xmi:type": "uml:Association",
                         "isDerived": "false"
@@ -418,7 +214,7 @@
                       "ownedEnd": [
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6u9Q1qQfhQ=",
+                            "xmi:id": "AAAAAAGOeWBMkXLRz8s=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -443,14 +239,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+sdVos=",
+                              "xmi:id": "AAAAAAGOfhojJJmVfv8=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+se89E=",
+                              "xmi:id": "AAAAAAGOfhojJJmWwIM=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -458,7 +254,211 @@
                         },
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6u9Q1qR5Q8=",
+                            "xmi:id": "AAAAAAGOeWBMkXLS/TM=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakcEiFyq5sg="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmXLuY=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "0"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmYOZk=",
+                              "xmi:type": "uml:LiteralUnlimitedNatural",
+                              "value": "*"
+                            }
+                          }
+                        }
+                      ],
+                      "memberEnd": [
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWBMkXLRz8s="
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWBMkXLS/TM="
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOeWBk1XRIhBg=",
+                        "visibility": "public",
+                        "xmi:type": "uml:Association",
+                        "isDerived": "false"
+                      },
+                      "ownedEnd": [
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWBk1XRJL5E=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakP4uFtHMBA="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmbf60=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmcrMQ=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWBk1XRK7JM=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakVobFv3q7U="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmdgyA=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "0"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmenHI=",
+                              "xmi:type": "uml:LiteralUnlimitedNatural",
+                              "value": "*"
+                            }
+                          }
+                        }
+                      ],
+                      "memberEnd": [
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWBk1XRJL5E="
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWBk1XRK7JM="
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOeWa+o8mPKAA=",
+                        "visibility": "public",
+                        "xmi:type": "uml:Association",
+                        "isDerived": "false"
+                      },
+                      "ownedEnd": [
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWa+o8mQeYI=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakP4uFtHMBA="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmh8ZM=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJJmif+8=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWa+o8mRUxY=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -483,14 +483,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+sf3fQ=",
+                              "xmi:id": "AAAAAAGOfhojJJmj/OE=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+sgKW0=",
+                              "xmi:id": "AAAAAAGOfhojJJmkBPI=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -500,19 +500,19 @@
                       "memberEnd": [
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6u9Q1qQfhQ="
+                            "xmi:idref": "AAAAAAGOeWa+o8mQeYI="
                           }
                         },
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6u9Q1qR5Q8="
+                            "xmi:idref": "AAAAAAGOeWa+o8mRUxY="
                           }
                         }
                       ]
                     },
                     {
                       "$": {
-                        "xmi:id": "AAAAAAGOc6vYHl6c13E=",
+                        "xmi:id": "AAAAAAGOeWcCpeEKagU=",
                         "visibility": "public",
                         "xmi:type": "uml:Association",
                         "isDerived": "false"
@@ -520,7 +520,7 @@
                       "ownedEnd": [
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6vYHl6d1/0=",
+                            "xmi:id": "AAAAAAGOeWcCpeEL/54=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -545,14 +545,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+sjUvY=",
+                              "xmi:id": "AAAAAAGOfhojJZmn1/k=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+skFeM=",
+                              "xmi:id": "AAAAAAGOfhojJZmobrM=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -560,7 +560,7 @@
                         },
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc6vYHl6e8iQ=",
+                            "xmi:id": "AAAAAAGOeWcCpeEMabE=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -585,14 +585,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+slyw0=",
+                              "xmi:id": "AAAAAAGOfhojJZmpU/I=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXM+smghI=",
+                              "xmi:id": "AAAAAAGOfhojJZmqOc8=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -602,12 +602,12 @@
                       "memberEnd": [
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6vYHl6d1/0="
+                            "xmi:idref": "AAAAAAGOeWcCpeEL/54="
                           }
                         },
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc6vYHl6e8iQ="
+                            "xmi:idref": "AAAAAAGOeWcCpeEMabE="
                           }
                         }
                       ]
@@ -627,7 +627,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOakxwUV0wCPM=",
-                        "name": "merchantId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -639,6 +639,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -776,7 +786,7 @@
                   "ownedMember": [
                     {
                       "$": {
-                        "xmi:id": "AAAAAAGOc60mN4u+9Mc=",
+                        "xmi:id": "AAAAAAGOeWYV5KjZ2nE=",
                         "visibility": "public",
                         "xmi:type": "uml:Association",
                         "isDerived": "false"
@@ -784,7 +794,7 @@
                       "ownedEnd": [
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc60mN4u/fZc=",
+                            "xmi:id": "AAAAAAGOeWYV5Kja8fg=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -809,14 +819,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOspBzs=",
+                              "xmi:id": "AAAAAAGOfhojJZmtYEs=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsqR2I=",
+                              "xmi:id": "AAAAAAGOfhojJZmuve4=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "1"
                             }
@@ -824,211 +834,7 @@
                         },
                         {
                           "$": {
-                            "xmi:id": "AAAAAAGOc60mN4vAksA=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakXQ+1wnFv8="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsr2Ig=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "0"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsss5c=",
-                              "xmi:type": "uml:LiteralUnlimitedNatural",
-                              "value": "*"
-                            }
-                          }
-                        }
-                      ],
-                      "memberEnd": [
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc60mN4u/fZc="
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc60mN4vAksA="
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "$": {
-                        "xmi:id": "AAAAAAGOc60/iY7aGU4=",
-                        "visibility": "public",
-                        "xmi:type": "uml:Association",
-                        "isDerived": "false"
-                      },
-                      "ownedEnd": [
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc60/iY7bj8g=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakTVSVvKPgo="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsvOjs=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsw4jA=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc60/iY7c3a0=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakeSy10D0JI="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsxNgg=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "0"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOsyJlw=",
-                              "xmi:type": "uml:LiteralUnlimitedNatural",
-                              "value": "*"
-                            }
-                          }
-                        }
-                      ],
-                      "memberEnd": [
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc60/iY7bj8g="
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:idref": "AAAAAAGOc60/iY7c3a0="
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "$": {
-                        "xmi:id": "AAAAAAGOc61vgpkUIeY=",
-                        "visibility": "public",
-                        "xmi:type": "uml:Association",
-                        "isDerived": "false"
-                      },
-                      "ownedEnd": [
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc61vgpkViRo=",
-                            "visibility": "public",
-                            "isStatic": "false",
-                            "isLeaf": "false",
-                            "isReadOnly": "false",
-                            "isOrdered": "false",
-                            "isUnique": "false",
-                            "xmi:type": "uml:Property",
-                            "aggregation": "none",
-                            "isDerived": "false",
-                            "isID": "false",
-                            "type": "AAAAAAGOakTVSVvKPgo="
-                          },
-                          "xmi:Extension": {
-                            "$": {
-                              "extender": "StarUML"
-                            },
-                            "stereotype": {
-                              "$": {
-                                "value": ""
-                              }
-                            }
-                          },
-                          "lowerValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOs15uM=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          },
-                          "upperValue": {
-                            "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOs2Me4=",
-                              "xmi:type": "uml:LiteralInteger",
-                              "value": "1"
-                            }
-                          }
-                        },
-                        {
-                          "$": {
-                            "xmi:id": "AAAAAAGOc61vgpkW31I=",
+                            "xmi:id": "AAAAAAGOeWYV5KjbozI=",
                             "visibility": "public",
                             "isStatic": "false",
                             "isLeaf": "false",
@@ -1053,14 +859,14 @@
                           },
                           "lowerValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOs3mWM=",
+                              "xmi:id": "AAAAAAGOfhojJZmvFIo=",
                               "xmi:type": "uml:LiteralInteger",
                               "value": "0"
                             }
                           },
                           "upperValue": {
                             "$": {
-                              "xmi:id": "AAAAAAGOc7NXNOs4imo=",
+                              "xmi:id": "AAAAAAGOfhojJZmwIr8=",
                               "xmi:type": "uml:LiteralUnlimitedNatural",
                               "value": "*"
                             }
@@ -1070,12 +876,114 @@
                       "memberEnd": [
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc61vgpkViRo="
+                            "xmi:idref": "AAAAAAGOeWYV5Kja8fg="
                           }
                         },
                         {
                           "$": {
-                            "xmi:idref": "AAAAAAGOc61vgpkW31I="
+                            "xmi:idref": "AAAAAAGOeWYV5KjbozI="
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOeXFL0K9HeOI=",
+                        "visibility": "public",
+                        "xmi:type": "uml:Association",
+                        "isDerived": "false"
+                      },
+                      "ownedEnd": [
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeXFL0K9IGX4=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakTVSVvKPgo="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJZmz6QE=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJZm0XG0=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeXFL0K9JMoU=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakXQ+1wnFv8="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJpm14xM=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "0"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJpm21qI=",
+                              "xmi:type": "uml:LiteralUnlimitedNatural",
+                              "value": "*"
+                            }
+                          }
+                        }
+                      ],
+                      "memberEnd": [
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeXFL0K9IGX4="
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeXFL0K9JMoU="
                           }
                         }
                       ]
@@ -1095,7 +1003,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOalT88F1AHcs=",
-                        "name": "supplierId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -1107,6 +1015,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -1243,7 +1161,7 @@
                   },
                   "ownedMember": {
                     "$": {
-                      "xmi:id": "AAAAAAGOc6zc+oXIOPs=",
+                      "xmi:id": "AAAAAAGOeWAy1XGUSq0=",
                       "visibility": "public",
                       "xmi:type": "uml:Association",
                       "isDerived": "false"
@@ -1251,7 +1169,7 @@
                     "ownedEnd": [
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc6zc+oXJ1CI=",
+                          "xmi:id": "AAAAAAGOeWAy1XGV3Pc=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1276,14 +1194,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOs7EA8=",
+                            "xmi:id": "AAAAAAGOfhojJpm5BX4=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOs86P8=",
+                            "xmi:id": "AAAAAAGOfhojJpm6sio=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1291,7 +1209,7 @@
                       },
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc6zc+4XKa50=",
+                          "xmi:id": "AAAAAAGOeWAy1XGWtdo=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1316,14 +1234,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOs951w=",
+                            "xmi:id": "AAAAAAGOfhojJpm7voA=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOs+yN8=",
+                            "xmi:id": "AAAAAAGOfhojJpm87Z0=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1333,12 +1251,12 @@
                     "memberEnd": [
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc6zc+oXJ1CI="
+                          "xmi:idref": "AAAAAAGOeWAy1XGV3Pc="
                         }
                       },
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc6zc+4XKa50="
+                          "xmi:idref": "AAAAAAGOeWAy1XGWtdo="
                         }
                       }
                     ]
@@ -1357,7 +1275,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOanLual2/Ei0=",
-                        "name": "productId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -1369,6 +1287,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -1455,6 +1383,58 @@
                         "isDerived": "false",
                         "isID": "false"
                       }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhY0yXrk3YQ=",
+                        "name": "merchantId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhZFEHwil/k=",
+                        "name": "imageId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
                     }
                   ]
                 },
@@ -1483,7 +1463,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOaojtj148bVU=",
-                        "name": "orderId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -1495,6 +1475,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -1547,6 +1537,84 @@
                         "isDerived": "false",
                         "isID": "false"
                       }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhJWP1amJWg=",
+                        "name": "merchantId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhJgp1gyBmU=",
+                        "name": "stockId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhJqb1lw1lk=",
+                        "name": "supplierId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
                     }
                   ]
                 },
@@ -1563,7 +1631,7 @@
                   },
                   "ownedMember": {
                     "$": {
-                      "xmi:id": "AAAAAAGOc62YeqKL9Dc=",
+                      "xmi:id": "AAAAAAGOeWY42rHq51o=",
                       "visibility": "public",
                       "xmi:type": "uml:Association",
                       "isDerived": "false"
@@ -1571,7 +1639,7 @@
                     "ownedEnd": [
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc62YeqKM1ro=",
+                          "xmi:id": "AAAAAAGOeWY42rHrwkU=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1596,14 +1664,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtBAAY=",
+                            "xmi:id": "AAAAAAGOfhojJpm/YQs=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtCwcE=",
+                            "xmi:id": "AAAAAAGOfhojJpnAP0s=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1611,7 +1679,7 @@
                       },
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc62YeqKN0mA=",
+                          "xmi:id": "AAAAAAGOeWY42rHsHXk=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1636,14 +1704,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtDLTQ=",
+                            "xmi:id": "AAAAAAGOfhojJpnBm+I=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtEQHo=",
+                            "xmi:id": "AAAAAAGOfhojJpnCf4o=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1653,12 +1721,12 @@
                     "memberEnd": [
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc62YeqKM1ro="
+                          "xmi:idref": "AAAAAAGOeWY42rHrwkU="
                         }
                       },
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc62YeqKN0mA="
+                          "xmi:idref": "AAAAAAGOeWY42rHsHXk="
                         }
                       }
                     ]
@@ -1677,7 +1745,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOapDMJl5KiFs=",
-                        "name": "paymentId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -1689,6 +1757,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -1724,6 +1802,32 @@
                         "isDerived": "false",
                         "isID": "false"
                       }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhVY5Hbm2qc=",
+                        "name": "invoiceId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
                     }
                   ]
                 },
@@ -1740,7 +1844,7 @@
                   },
                   "ownedMember": {
                     "$": {
-                      "xmi:id": "AAAAAAGOc62/J6lzMAM=",
+                      "xmi:id": "AAAAAAGOeWbprNjAEDg=",
                       "visibility": "public",
                       "xmi:type": "uml:Association",
                       "isDerived": "false"
@@ -1748,7 +1852,7 @@
                     "ownedEnd": [
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc62/J6l0N3M=",
+                          "xmi:id": "AAAAAAGOeWbprNjB9i8=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1773,14 +1877,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtHLS8=",
+                            "xmi:id": "AAAAAAGOfhojJpnFav0=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "0"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtIkrM=",
+                            "xmi:id": "AAAAAAGOfhojJpnGdmA=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1788,7 +1892,7 @@
                       },
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc62/J6l1xvo=",
+                          "xmi:id": "AAAAAAGOeWbprNjCrHU=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1813,14 +1917,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtJYig=",
+                            "xmi:id": "AAAAAAGOfhojJpnHcvI=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtKjC4=",
+                            "xmi:id": "AAAAAAGOfhojJpnIRYE=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1830,12 +1934,12 @@
                     "memberEnd": [
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc62/J6l0N3M="
+                          "xmi:idref": "AAAAAAGOeWbprNjB9i8="
                         }
                       },
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc62/J6l1xvo="
+                          "xmi:idref": "AAAAAAGOeWbprNjCrHU="
                         }
                       }
                     ]
@@ -1854,7 +1958,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOaoO3X14B5ew=",
-                        "name": "imageId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -1866,6 +1970,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -1951,7 +2065,7 @@
                   },
                   "ownedMember": {
                     "$": {
-                      "xmi:id": "AAAAAAGOc6zsMIiWIho=",
+                      "xmi:id": "AAAAAAGOeWXN3JpRX5s=",
                       "visibility": "public",
                       "xmi:type": "uml:Association",
                       "isDerived": "false"
@@ -1959,7 +2073,7 @@
                     "ownedEnd": [
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc6zsMIiX+KQ=",
+                          "xmi:id": "AAAAAAGOeWXN3JpSm5Q=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -1984,14 +2098,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtNHPo=",
+                            "xmi:id": "AAAAAAGOfhojJpnLvX4=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNOtOiAw=",
+                            "xmi:id": "AAAAAAGOfhojJpnM0RM=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -1999,7 +2113,7 @@
                       },
                       {
                         "$": {
-                          "xmi:id": "AAAAAAGOc6zsMIiYJb4=",
+                          "xmi:id": "AAAAAAGOeWXN3JpT9JA=",
                           "visibility": "public",
                           "isStatic": "false",
                           "isLeaf": "false",
@@ -2024,14 +2138,14 @@
                         },
                         "lowerValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNetPlw4=",
+                            "xmi:id": "AAAAAAGOfhojJpnNmIQ=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
                         },
                         "upperValue": {
                           "$": {
-                            "xmi:id": "AAAAAAGOc7NXNetQbH4=",
+                            "xmi:id": "AAAAAAGOfhojJpnO7o8=",
                             "xmi:type": "uml:LiteralInteger",
                             "value": "1"
                           }
@@ -2041,12 +2155,12 @@
                     "memberEnd": [
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc6zsMIiX+KQ="
+                          "xmi:idref": "AAAAAAGOeWXN3JpSm5Q="
                         }
                       },
                       {
                         "$": {
-                          "xmi:idref": "AAAAAAGOc6zsMIiYJb4="
+                          "xmi:idref": "AAAAAAGOeWXN3JpT9JA="
                         }
                       }
                     ]
@@ -2065,7 +2179,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOaokail5DRvU=",
-                        "name": "stockId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -2077,6 +2191,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -2094,6 +2218,32 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhhn4EW6dT8=",
+                        "name": "productId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
                       }
                     }
                   ]
@@ -2123,7 +2273,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOapE+iF5Y9zE=",
-                        "name": "invoiceId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -2135,6 +2285,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -2187,6 +2347,84 @@
                         "isDerived": "false",
                         "isID": "false"
                       }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhDpuh3ehlc=",
+                        "name": "merchantId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhEvUy+SbIY=",
+                        "name": "supplierId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfhFyfzPeVtw=",
+                        "name": "orderId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
                     }
                   ]
                 },
@@ -2201,6 +2439,212 @@
                     "xmi:type": "uml:Class",
                     "isActive": "false"
                   },
+                  "ownedMember": [
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOeWXx1p/aRKs=",
+                        "visibility": "public",
+                        "xmi:type": "uml:Association",
+                        "isDerived": "false"
+                      },
+                      "ownedEnd": [
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWXx1p/bRqY=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakeSy10D0JI="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nRzOo=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "0"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nS6Zg=",
+                              "xmi:type": "uml:LiteralUnlimitedNatural",
+                              "value": "*"
+                            }
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOeWXx1p/cdW4=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakTVSVvKPgo="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nTUGw=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nUnVc=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        }
+                      ],
+                      "memberEnd": [
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWXx1p/bRqY="
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOeWXx1p/cdW4="
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfgQNkBWUFwA=",
+                        "visibility": "public",
+                        "xmi:type": "uml:Association",
+                        "isDerived": "false"
+                      },
+                      "ownedEnd": [
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOfgQNkBWVoCc=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakeSy10D0JI="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nXa1Q=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nYZ9w=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:id": "AAAAAAGOfgQNkBWWVDc=",
+                            "visibility": "public",
+                            "isStatic": "false",
+                            "isLeaf": "false",
+                            "isReadOnly": "false",
+                            "isOrdered": "false",
+                            "isUnique": "false",
+                            "xmi:type": "uml:Property",
+                            "aggregation": "none",
+                            "isDerived": "false",
+                            "isID": "false",
+                            "type": "AAAAAAGOakdNEVzY3Lg="
+                          },
+                          "xmi:Extension": {
+                            "$": {
+                              "extender": "StarUML"
+                            },
+                            "stereotype": {
+                              "$": {
+                                "value": ""
+                              }
+                            }
+                          },
+                          "lowerValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5nZxos=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          },
+                          "upperValue": {
+                            "$": {
+                              "xmi:id": "AAAAAAGOfhojJ5naNDk=",
+                              "xmi:type": "uml:LiteralInteger",
+                              "value": "1"
+                            }
+                          }
+                        }
+                      ],
+                      "memberEnd": [
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOfgQNkBWVoCc="
+                          }
+                        },
+                        {
+                          "$": {
+                            "xmi:idref": "AAAAAAGOfgQNkBWWVDc="
+                          }
+                        }
+                      ]
+                    }
+                  ],
                   "xmi:Extension": {
                     "$": {
                       "extender": "StarUML"
@@ -2215,7 +2659,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOapEJEl5RfRU=",
-                        "name": "deliveryId",
+                        "name": "_id",
                         "visibility": "public",
                         "isStatic": "false",
                         "isLeaf": "false",
@@ -2227,6 +2671,16 @@
                         "aggregation": "none",
                         "isDerived": "false",
                         "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOeWL9vXdJ/Mc="
+                          }
+                        }
                       }
                     },
                     {
@@ -2279,6 +2733,84 @@
                         "isDerived": "false",
                         "isID": "false"
                       }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfg5z+tM/3AA=",
+                        "name": "merchantId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfg7iAtxF/Mw=",
+                        "name": "supplierId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "$": {
+                        "xmi:id": "AAAAAAGOfg9FeeCRE9g=",
+                        "name": "invoiceId",
+                        "visibility": "public",
+                        "isStatic": "false",
+                        "isLeaf": "false",
+                        "isReadOnly": "false",
+                        "isOrdered": "false",
+                        "isUnique": "false",
+                        "xmi:type": "uml:Property",
+                        "aggregation": "none",
+                        "isDerived": "false",
+                        "isID": "false"
+                      },
+                      "xmi:Extension": {
+                        "$": {
+                          "extender": "StarUML"
+                        },
+                        "stereotype": {
+                          "$": {
+                            "value": "AAAAAAGOewaDIUJSNSI="
+                          }
+                        }
+                      }
                     }
                   ]
                 }
@@ -2317,7 +2849,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOayqYdQtx/eg=",
-                        "name": ":productId",
+                        "name": "/:productId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOavA5IsxHlSE=",
@@ -2337,7 +2869,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOaysTVBfB4jg=",
-                        "name": ":productId",
+                        "name": "/:productId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOavA5IsxHlSE=",
@@ -2429,7 +2961,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOa3OCkb1BRUo=",
-                        "name": ":supplierId",
+                        "name": "/:supplierId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOau3L12ZwjgM=",
@@ -2449,7 +2981,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOa3OmD8KGtOc=",
-                        "name": ":supplierId",
+                        "name": "/:supplierId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOau3L12ZwjgM=",
@@ -2610,7 +3142,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOa0KZEcuxK/g=",
-                        "name": ":merchantId",
+                        "name": "/:merchantId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOauzzuxtPzpA=",
@@ -2630,7 +3162,7 @@
                     {
                       "$": {
                         "xmi:id": "AAAAAAGOa1qefKuMULo=",
-                        "name": ":merchantId",
+                        "name": "/:merchantId",
                         "visibility": "public",
                         "xmi:type": "uml:Dependency",
                         "client": "AAAAAAGOauzzuxtPzpA=",
@@ -2883,7 +3415,7 @@
                   "ownedMember": {
                     "$": {
                       "xmi:id": "AAAAAAGOayzL1GzFsoY=",
-                      "name": ":orderId",
+                      "name": "/:orderId",
                       "visibility": "public",
                       "xmi:type": "uml:Dependency",
                       "client": "AAAAAAGOavElEw2lygA=",
@@ -3136,7 +3668,7 @@
                   "ownedMember": {
                     "$": {
                       "xmi:id": "AAAAAAGOa3O4rsc7q/4=",
-                      "name": ":paymentId",
+                      "name": "/:paymentId",
                       "visibility": "public",
                       "xmi:type": "uml:Dependency",
                       "client": "AAAAAAGOavI+cjgX4sw=",
@@ -3226,7 +3758,7 @@
                   "ownedMember": {
                     "$": {
                       "xmi:id": "AAAAAAGOa1Uzfw97lHQ=",
-                      "name": ":stockId",
+                      "name": "/:stockId",
                       "visibility": "public",
                       "xmi:type": "uml:Dependency",
                       "client": "AAAAAAGOavJvmz9KQiY=",
@@ -3339,7 +3871,7 @@
                   "ownedMember": {
                     "$": {
                       "xmi:id": "AAAAAAGOa3PEh8uoLZ0=",
-                      "name": ":invoiceId",
+                      "name": "/:invoiceId",
                       "visibility": "public",
                       "xmi:type": "uml:Dependency",
                       "client": "AAAAAAGOavKhu0dVjt8=",
@@ -3429,7 +3961,7 @@
                   "ownedMember": {
                     "$": {
                       "xmi:id": "AAAAAAGOazxsGf99pzA=",
-                      "name": ":deliveryId",
+                      "name": "/:deliveryId",
                       "visibility": "public",
                       "xmi:type": "uml:Dependency",
                       "client": "AAAAAAGOavbKP4RmmXY=",
@@ -4761,7 +5293,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNetRCpo=",
+                  "xmi:id": "AAAAAAGOfhojKJnbQgY=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -4771,7 +5303,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNetSqoY=",
+                    "xmi:id": "AAAAAAGOfhojKJnctGI=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhE91w="
                   }
@@ -4782,7 +5314,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhFebs=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNetRCpo="
+                  "association": "AAAAAAGOfhojKJnbQgY="
                 },
                 "type": {
                   "$": {
@@ -4804,7 +5336,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutTbW4=",
+                  "xmi:id": "AAAAAAGOfhojKJnd7sA=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -4814,7 +5346,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutU92A=",
+                    "xmi:id": "AAAAAAGOfhojKJnee/Q=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhHz+c="
                   }
@@ -4825,7 +5357,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhIE6I=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutTbW4="
+                  "association": "AAAAAAGOfhojKJnd7sA="
                 },
                 "type": {
                   "$": {
@@ -4847,7 +5379,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutVE8w=",
+                  "xmi:id": "AAAAAAGOfhojKZnf5Vs=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -4857,7 +5389,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutWS+g=",
+                    "xmi:id": "AAAAAAGOfhojKZngJVI=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhKC9A="
                   }
@@ -4868,7 +5400,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhLLAM=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutVE8w="
+                  "association": "AAAAAAGOfhojKZnf5Vs="
                 },
                 "type": {
                   "$": {
@@ -4890,7 +5422,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutXKT8=",
+                  "xmi:id": "AAAAAAGOfhojKZnhNPI=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -4900,7 +5432,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutYh4Y=",
+                    "xmi:id": "AAAAAAGOfhojKZni4/s=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhNIKw="
                   }
@@ -4911,7 +5443,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhOmvc=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutXKT8="
+                  "association": "AAAAAAGOfhojKZnhNPI="
                 },
                 "type": {
                   "$": {
@@ -5038,7 +5570,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutZngQ=",
+                  "xmi:id": "AAAAAAGOfhojKZnjc4Y=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5048,7 +5580,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutaK6A=",
+                    "xmi:id": "AAAAAAGOfhojKZnkvvQ=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhha3w="
                   }
@@ -5059,7 +5591,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhii/E=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutZngQ="
+                  "association": "AAAAAAGOfhojKZnjc4Y="
                 },
                 "type": {
                   "$": {
@@ -5081,7 +5613,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutbIt4=",
+                  "xmi:id": "AAAAAAGOfhojKZnlIIQ=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5091,7 +5623,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutcaSQ=",
+                    "xmi:id": "AAAAAAGOfhojKZnmAVg=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhlUzM="
                   }
@@ -5102,7 +5634,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhmhfg=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutbIt4="
+                  "association": "AAAAAAGOfhojKZnlIIQ="
                 },
                 "type": {
                   "$": {
@@ -5124,7 +5656,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutdgZA=",
+                  "xmi:id": "AAAAAAGOfhojKZnnLKQ=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5134,7 +5666,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutevcE=",
+                    "xmi:id": "AAAAAAGOfhojKZnokiU=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhpVAQ="
                   }
@@ -5145,7 +5677,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhqtHw=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutdgZA="
+                  "association": "AAAAAAGOfhojKZnnLKQ="
                 },
                 "type": {
                   "$": {
@@ -5167,7 +5699,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutfmfw=",
+                  "xmi:id": "AAAAAAGOfhojKZnp1Hc=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5177,7 +5709,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutgTYs=",
+                    "xmi:id": "AAAAAAGOfhojKZnqZ78=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhsfsY="
                   }
@@ -5188,7 +5720,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhtzIs=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutfmfw="
+                  "association": "AAAAAAGOfhojKZnp1Hc="
                 },
                 "type": {
                   "$": {
@@ -5210,7 +5742,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNuthwmg=",
+                  "xmi:id": "AAAAAAGOfhojKZnrbLk=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5220,7 +5752,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutiVKM=",
+                    "xmi:id": "AAAAAAGOfhojKZnstZg=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhvSJo="
                   }
@@ -5231,7 +5763,7 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhwc7Y=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNuthwmg="
+                  "association": "AAAAAAGOfhojKZnrbLk="
                 },
                 "type": {
                   "$": {
@@ -5253,7 +5785,7 @@
               },
               "ownedMember": {
                 "$": {
-                  "xmi:id": "AAAAAAGOc7NXNutjNRw=",
+                  "xmi:id": "AAAAAAGOfhojKZnt8bw=",
                   "xmi:type": "uml:Extension"
                 },
                 "memberEnd": {
@@ -5263,7 +5795,7 @@
                 },
                 "ownedEnd": {
                   "$": {
-                    "xmi:id": "AAAAAAGOc7NXNutkiqc=",
+                    "xmi:id": "AAAAAAGOfhojKZnu90g=",
                     "xmi:type": "uml:ExtensionEnd",
                     "type": "AAAAAAGOZS0Q/fhyKpk="
                   }
@@ -5274,12 +5806,139 @@
                   "xmi:id": "AAAAAAGOZS0Q/fhzdCo=",
                   "xmi:type": "uml:Property",
                   "name": "base_Class",
-                  "association": "AAAAAAGOc7NXNutjNRw="
+                  "association": "AAAAAAGOfhojKZnt8bw="
                 },
                 "type": {
                   "$": {
                     "href": "http://schema.omg.org/spec/UML/2.0/uml.xml#Class"
                   }
+                }
+              }
+            },
+            {
+              "$": {
+                "xmi:id": "AAAAAAGOeWGc63Z4dVQ=",
+                "name": "Relational",
+                "visibility": "public",
+                "isAbstract": "false",
+                "isFinalSpecialization": "false",
+                "isLeaf": "false",
+                "xmi:type": "uml:Stereotype",
+                "isActive": "false"
+              },
+              "ownedMember": {
+                "$": {
+                  "xmi:id": "AAAAAAGOfhojKZnvTto=",
+                  "xmi:type": "uml:Extension"
+                },
+                "memberEnd": {
+                  "$": {
+                    "xmi:idref": "AAAAAAGOeWH+kHamMmY="
+                  }
+                },
+                "ownedEnd": {
+                  "$": {
+                    "xmi:id": "AAAAAAGOfhojKZnwTJU=",
+                    "xmi:type": "uml:ExtensionEnd",
+                    "type": "AAAAAAGOeWGc63Z4dVQ="
+                  }
+                }
+              },
+              "ownedAttribute": {
+                "$": {
+                  "xmi:id": "AAAAAAGOeWH+kHamMmY=",
+                  "xmi:type": "uml:Property",
+                  "name": "base_Class",
+                  "association": "AAAAAAGOfhojKZnvTto="
+                },
+                "type": {
+                  "$": {
+                    "href": "http://schema.omg.org/spec/UML/2.0/uml.xml#Class"
+                  }
+                }
+              }
+            },
+            {
+              "$": {
+                "xmi:id": "AAAAAAGOeWL9vXdJ/Mc=",
+                "name": "PK",
+                "visibility": "public",
+                "isAbstract": "false",
+                "isFinalSpecialization": "false",
+                "isLeaf": "false",
+                "xmi:type": "uml:Stereotype",
+                "isActive": "false"
+              },
+              "generalization": {
+                "$": {
+                  "xmi:id": "AAAAAAGOeWMqind3O9k=",
+                  "visibility": "public",
+                  "xmi:type": "uml:Generalization",
+                  "specific": "AAAAAAGOeWL9vXdJ/Mc=",
+                  "general": "AAAAAAGOeWGc63Z4dVQ="
+                }
+              }
+            },
+            {
+              "$": {
+                "xmi:id": "AAAAAAGOeWM3jHeIM/w=",
+                "name": "FK",
+                "visibility": "public",
+                "isAbstract": "false",
+                "isFinalSpecialization": "false",
+                "isLeaf": "false",
+                "xmi:type": "uml:Stereotype",
+                "isActive": "false"
+              },
+              "generalization": {
+                "$": {
+                  "xmi:id": "AAAAAAGOeWNOwne1IZo=",
+                  "visibility": "public",
+                  "xmi:type": "uml:Generalization",
+                  "specific": "AAAAAAGOeWM3jHeIM/w=",
+                  "general": "AAAAAAGOeWGc63Z4dVQ="
+                }
+              }
+            },
+            {
+              "$": {
+                "xmi:id": "AAAAAAGOewaDIUJSNSI=",
+                "name": "REF",
+                "visibility": "public",
+                "isAbstract": "false",
+                "isFinalSpecialization": "false",
+                "isLeaf": "false",
+                "xmi:type": "uml:Stereotype",
+                "isActive": "false"
+              },
+              "generalization": {
+                "$": {
+                  "xmi:id": "AAAAAAGOewaipEKAc4E=",
+                  "visibility": "public",
+                  "xmi:type": "uml:Generalization",
+                  "specific": "AAAAAAGOewaDIUJSNSI=",
+                  "general": "AAAAAAGOeWGc63Z4dVQ="
+                }
+              }
+            },
+            {
+              "$": {
+                "xmi:id": "AAAAAAGOewbJ90KR7sY=",
+                "name": "EMD",
+                "visibility": "public",
+                "isAbstract": "false",
+                "isFinalSpecialization": "false",
+                "isLeaf": "false",
+                "xmi:type": "uml:Stereotype",
+                "isActive": "false"
+              },
+              "generalization": {
+                "$": {
+                  "xmi:id": "AAAAAAGOewdOskLBReQ=",
+                  "visibility": "public",
+                  "xmi:type": "uml:Generalization",
+                  "specific": "AAAAAAGOewbJ90KR7sY=",
+                  "general": "AAAAAAGOeWGc63Z4dVQ="
                 }
               }
             }

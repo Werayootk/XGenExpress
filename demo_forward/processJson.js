@@ -49,12 +49,23 @@ function processJsonFile(jsonFileName) {
             objModel.stereotype = elem["xmi:Extension"].stereotype.$.value;
             if (elem["ownedAttribute"]?.length) {
               for (const attr of elem["ownedAttribute"]) {
-                let objAttr = {
-                  attrId: attr.$["xmi:id"],
-                  attrName: attr.$.name,
-                  attrType: attr.$.type || "",
-                };
-                objModel.attribute.push(objAttr);
+                if (attr['xmi:Extension']?.stereotype.$.value != undefined) {
+                  let objAttr = {
+                    attrId: attr.$["xmi:id"],
+                    attrName: attr.$.name,
+                    attrType: attr.$.type,
+                    attrKey: attr['xmi:Extension'].stereotype.$.value
+                  };
+                  objModel.attribute.push(objAttr);
+                } else {
+                  let objAttr = {
+                    attrId: attr.$["xmi:id"],
+                    attrName: attr.$.name,
+                    attrType: attr.$.type,
+                    attrKey: 'no_key'
+                  };
+                  objModel.attribute.push(objAttr);
+                }
               }
             }
             if (elem["ownedMember"]?.length) {

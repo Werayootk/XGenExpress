@@ -112,7 +112,7 @@ function generateRouter(data) {
               });
               nextRoutePath(
                 elem.routePath,
-                path.toLowerCase().replace('route', '')
+                path.replace('Route', '')
               );
             }
           }
@@ -161,12 +161,11 @@ function generateModel(data) {
       return acc;
     }, {});
   const mapProfile = data.profile
-    .filter((item) => ['Model', 'Database'].includes(item.name))
+    .filter((item) => ['Model', 'Database', 'PK', 'FK', 'REF', 'EMD'].includes(item.name))
     .reduce((acc, item) => {
       acc[item.id] = item.name;
       return acc;
     }, {});
-
   const filteredDataModel = data.package.filter(
     (item) => mapProfile[item.stereotype] === 'Model'
   );
@@ -206,10 +205,18 @@ function generateModel(data) {
       if (element.attribute?.length != 0) {
         element.attribute.forEach((attr) => {
           attribute.push({ name: attr.attrName, type: mapType[attr.attrType] });
-          fieldTemplate += `
-${attr.attrName}: {
-type: DataTypes.${mapType[attr.attrType].toUpperCase()},
-},`;
+          if (attr.attrKey != 'no_key' && mapProfile[attr.attrKey] === 'PK') {
+            fieldTemplate += `
+  ${attr.attrName}: {
+  type: DataTypes.INTEGER,
+  primaryKey: true,
+  },`;
+          } else {
+            fieldTemplate += `
+  ${attr.attrName}: {
+  type: DataTypes.${mapType[attr.attrType].toUpperCase()},
+  },`;
+          }
         });
         let commentSection = `
 /**
@@ -263,11 +270,22 @@ module.exports = (sequelize, DataTypes) => {
       if (element.attribute?.length != 0) {
         element.attribute.forEach((attr) => {
           attribute.push({ name: attr.attrName, type: mapType[attr.attrType] });
-          fieldTemplate += `
-  ${attr.attrName}: {
-    type: ${mapType[attr.attrType] || ''}
-  },
-    `;
+          if (attr.attrKey != 'no_key' && mapProfile[attr.attrKey] === 'REF') { 
+            fieldTemplate += `
+            ${attr.attrName}: {
+              type: mongoose.Schema.Types.ObjectId,
+              ref: '${attr.attrName.replace('Id', '')}'
+            },
+              `;
+          } else if (attr.attrKey != 'no_key' && mapProfile[attr.attrKey] === 'PK') {
+            // SKIP 
+          } else {
+            fieldTemplate += `
+            ${attr.attrName}: {
+              type: ${mapType[attr.attrType] || ''}
+            },
+              `;
+          }
         });
         let commentSection = `
 /**
@@ -291,22 +309,6 @@ const ${element.name.toLowerCase().replace('model', '') + 'Schema'} = mongoose.S
 const ${element.name.replace('Model', '')} = mongoose.model("${element.name.replace('Model', '')}", ${element.name.toLowerCase().replace('model', '') + 'Schema'});
 module.exports = ${element.name.replace('Model', '')};
   `;
-  // let modelTemplate = `
-  // ${commentSection}
-  // class ${element.name.replace('Model', '')} {
-  //   constructor() {
-  //     this.schema = new mongoose.Schema({
-  //       ${fieldTemplate}              
-  //     });
-  //     this.model = mongoose.model('${element.name.replace(
-  //       'Model',
-  //       ''
-  //     )}', this.schema);
-  //   }
-  // }
-  
-  // module.exports = ${element.name.replace('Model', '')};
-  //   `;
         newModel.contentFile.push(modelTemplate);
         result.push(newModel);
       }
